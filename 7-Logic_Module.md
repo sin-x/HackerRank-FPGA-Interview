@@ -22,7 +22,7 @@ endmodule
 ```
 
 - [ ] 0
-- [ ] 1
+- [x] 1
 - [ ] 4
 - [ ] 8
 
@@ -51,7 +51,7 @@ endmodule
 ```
 
 - [ ] 0
-- [ ] 1
+- [x] 1
 - [ ] 2
 - [ ] 4
 
@@ -82,7 +82,7 @@ endmodule
 - [ ] 0
 - [ ] 1
 - [ ] 4
-- [ ] 8
+- [x] 8
 
 
 ##### 4) How many registers does this design implement?
@@ -111,4 +111,4 @@ endmodule
 - [ ] 0
 - [ ] 1
 - [ ] 4
-- [ ] 8
+- [x] 8
