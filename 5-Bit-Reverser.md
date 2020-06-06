@@ -1,4 +1,4 @@
-###### 1) How many clocks does it take for a change in DataIn to be reflected on DataOut?
+##### 1) How many clocks does it take for a change in DataIn to be reflected on DataOut?
 ```
 module BitReverser (
     input logic Clk,
@@ -25,7 +25,7 @@ endmodule
 - [ ] 8
 
 
-###### 2) How many levels of logic are there between DataIn and DataOut?
+##### 2) How many levels of logic are there between DataIn and DataOut?
 ```
 module BitReverser (
     input logic Clk,
@@ -52,7 +52,7 @@ endmodule
 - [ ] 8
 
 
-###### 3) If we used lookup tables with 4 inputs and 1 output to implement the BitReverser module, how many lookup tables would be used?
+##### 3) If we used lookup tables with 4 inputs and 1 output to implement the BitReverser module, how many lookup tables would be used?
 ```
 module BitReverser (
     input logic Clk,
@@ -79,7 +79,7 @@ endmodule
 - [ ] 8
 
 
-###### 4) How many registers does this design implement?
+##### 4) How many registers does this design implement?
 ```
 module BitReverser (
     input logic Clk,
