@@ -1,5 +1,6 @@
 ### Question 1
 **For the following gates, select the correct output value F and G given inputs A=0, B=0, C=1, D=1**
+![Logic1](/images/logic1.png)
 - [ ] F=0, G=0
 - [ ] F=0, G=1
 - [ ] F=1, G=0
