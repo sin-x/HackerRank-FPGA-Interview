@@ -38,7 +38,7 @@ module Matcher (
 endmodule
 ```
 
-- [ ] synchronous
+- [x] synchronous
 - [ ] asynchronous
 
 
@@ -89,7 +89,7 @@ endmodule
 - [ ] 8
 - [ ] 9
 - [ ] 12
-- [ ] 14
+- [x] 14
 - [ ] 128
 - [ ] 264
 
@@ -140,5 +140,5 @@ endmodule
 - [ ] 128
 - [ ] 255
 - [ ] 256
-- [ ] 511
+- [x] 511
 - [ ] 512
