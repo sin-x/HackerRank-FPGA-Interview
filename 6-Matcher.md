@@ -1,4 +1,5 @@
-##### 1) What type of reset does the following code use?
+### Question 1
+**What type of reset does the following code use?**
 ```
 module Matcher (
     input logic Clk,
@@ -42,8 +43,8 @@ endmodule
 - [ ] asynchronous
 
 
-
-##### 2) How many registers does this design use?
+### Question 2
+**How many registers does this design use?**
 ```
 module Matcher (
     input logic Clk,
@@ -94,8 +95,8 @@ endmodule
 - [ ] 264
 
 
-
-##### 3) What is the largest value the cnt signal can store?
+### Question 3
+**What is the largest value the cnt signal can store?**
 ```
 module Matcher (
     input logic Clk,
