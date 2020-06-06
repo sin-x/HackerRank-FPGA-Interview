@@ -202,40 +202,42 @@ endmodule
 ###### 5) What encoding technique is best if you want to minimize state register transitions?
 ```
 module FrameChecker (
-input logic Clk,
-input logic Rst,
-input logic StartIn,
-input logic EndIn,
-output logic ErrorOut
+    input logic Clk,
+    input logic Rst,
+    input logic StartIn,
+    input logic EndIn,
+    output logic ErrorOut
 );
-typedef enum {sReset, sIdle, iActive} StateType;
-StateType sState;
-always @(posedge Clk or posedge Rst) begin
-if (Rst) begin
-ErrorOut <= 0;
-sState <= sReset;
-end else begin
-ErrorOut <= 0;
-case (sState)
-sReset : begin
-sState <= sIdle;
-end
-sIdle : begin
-if (StartIn) begin
-sState <= iActive;
-end
-end
-iActive : begin
-if (EndIn) begin
-sState <= sIdle;
-end
-if (StartIn) begin
-ErrorOut <= 1;
-end
-end
-endcase
-end
-end
+
+    typedef enum {sReset, sIdle, iActive} StateType;
+    StateType sState;
+
+    always @(posedge Clk or posedge Rst) begin
+        if (Rst) begin
+            ErrorOut <= 0;
+            sState <= sReset;
+        end else begin
+            ErrorOut <= 0;
+            case (sState)
+                sReset : begin
+                    sState <= sIdle;
+                end
+                sIdle : begin
+                    if (StartIn) begin
+                        sState <= iActive;
+                    end
+                end
+                iActive : begin
+                    if (EndIn) begin
+                        sState <= sIdle;
+                    end
+                    if (StartIn) begin
+                        ErrorOut <= 1;
+                    end
+                end
+            endcase
+        end
+    end
 endmodule
 ```
 
