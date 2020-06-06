@@ -7,8 +7,10 @@ module FrameChecker (
 	input logic EndIn,
 	output logic ErrorOut
 );
+
 	typedef enum {sReset, sIdle, iActive} StateType;
 	StateType sState;
+	
 	always @(posedge Clk or posedge Rst) begin
 		if (Rst) begin
 			ErrorOut <= 0;
