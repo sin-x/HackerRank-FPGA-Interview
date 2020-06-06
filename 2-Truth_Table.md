@@ -48,4 +48,4 @@
 - [ ] A xor (B xor C)
 
 > *Explanation:*
-> Same as the previous question. This time, if we look at the **first line** of the truth table, we can exclude all the options - except the third one - because the output should be 0 in all those cases. 
+> Same as the previous question. This time, if we look at the **first line** of the truth table, we can exclude all the options - except the third one - because the output should be 0 in all those cases.
