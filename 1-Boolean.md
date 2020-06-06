@@ -7,8 +7,9 @@
 - [ ] F=1, G=0
 - [x] F=1, G=1
 
-> *Explanation:* F = (A and B) nand (C or D) = 0 nand 1 = 1
-> G = (A and B) xor (C or D) = 0 xor 1 = 1
+> *Explanation:* 
+> ```F = (A and B) nand (C or D) = 0 nand 1 = 1```
+> ```G = (A and B) xor (C or D) = 0 xor 1 = 1```
 
 ### Question 2
 **For the following gates, select the correct output value F and G given inputs A=1, B=1, C=0, D=1**
