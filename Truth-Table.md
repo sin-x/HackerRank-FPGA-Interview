@@ -1,4 +1,4 @@
-Select the boolean equation that matches the following truth table:
+###### 1) Select the boolean equation that matches the following truth table:
 | A | B | C | O |
 | - | - | - | - |
 | 0 | 0 | 0 | 0 |
@@ -20,7 +20,7 @@ Select the boolean equation that matches the following truth table:
 
 
 
-Select the boolean equation that matches the following truth table:
+###### 2) Select the boolean equation that matches the following truth table:
 | A | B | C | O |
 | - | - | - | - |
 | 0 | 0 | 0 | 1 |
