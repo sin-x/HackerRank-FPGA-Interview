@@ -42,6 +42,7 @@ asyncrhonous
 synchronous
 
 
+
 How many registers would it take to implement the FrameChecker module if the state machine uses one-hot
 encoding?
 ```
