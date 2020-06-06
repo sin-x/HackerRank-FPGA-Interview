@@ -45,40 +45,40 @@ endmodule
 ###### 2) How many registers would it take to implement the FrameChecker module if the state machine uses one-hot encoding?
 ```
 module FrameChecker (
- input logic Clk,
- input logic Rst,
- input logic StartIn,
- input logic EndIn,
- output logic ErrorOut
+    input logic Clk,
+    input logic Rst,
+    input logic StartIn,
+    input logic EndIn,
+    output logic ErrorOut
 );
- typedef enum {sReset, sIdle, iActive} StateType;
- StateType sState;
- always @(posedge Clk or posedge Rst) begin
- if (Rst) begin
- ErrorOut <= 0;
- sState <= sReset;
- end else begin
- ErrorOut <= 0;
- case (sState)
- sReset : begin
- sState <= sIdle;
- end
- sIdle : begin
- if (StartIn) begin
- sState <= iActive;
- end
- end
- iActive : begin
- if (EndIn) begin
- sState <= sIdle;
- end
- if (StartIn) begin
- ErrorOut <= 1;
- end
- end
- endcase
- end
- end
+    typedef enum {sReset, sIdle, iActive} StateType;
+    StateType sState;
+    always @(posedge Clk or posedge Rst) begin
+        if (Rst) begin
+            ErrorOut <= 0;
+            sState <= sReset;
+        end else begin
+            ErrorOut <= 0;
+            case (sState)
+                sReset : begin
+                    sState <= sIdle;
+                end
+                sIdle : begin
+                    if (StartIn) begin
+                        sState <= iActive;
+                    end
+                end
+                iActive : begin
+                    if (EndIn) begin
+                        sState <= sIdle;
+                    end
+                    if (StartIn) begin
+                        ErrorOut <= 1;
+                    end
+                end
+            endcase
+        end
+    end
 endmodule
 ```
 
@@ -94,40 +94,40 @@ endmodule
 ###### 3) How many registers would it take to implement the FrameChecker module if the state machine uses binary encoding?
 ```
 module FrameChecker (
- input logic Clk,
- input logic Rst,
- input logic StartIn,
- input logic EndIn,
- output logic ErrorOut
+input logic Clk,
+input logic Rst,
+input logic StartIn,
+input logic EndIn,
+output logic ErrorOut
 );
- typedef enum {sReset, sIdle, iActive} StateType;
- StateType sState;
- always @(posedge Clk or posedge Rst) begin
- if (Rst) begin
- ErrorOut <= 0;
- sState <= sReset;
- end else begin
- ErrorOut <= 0;
- case (sState)
- sReset : begin
- sState <= sIdle;
- end
- sIdle : begin
- if (StartIn) begin
- sState <= iActive;
- end
- end
- iActive : begin
- if (EndIn) begin
- sState <= sIdle;
- end
- if (StartIn) begin
- ErrorOut <= 1;
- end
- end
- endcase
- end
- end
+typedef enum {sReset, sIdle, iActive} StateType;
+StateType sState;
+always @(posedge Clk or posedge Rst) begin
+if (Rst) begin
+ErrorOut <= 0;
+sState <= sReset;
+end else begin
+ErrorOut <= 0;
+case (sState)
+sReset : begin
+sState <= sIdle;
+end
+sIdle : begin
+if (StartIn) begin
+sState <= iActive;
+end
+end
+iActive : begin
+if (EndIn) begin
+sState <= sIdle;
+end
+if (StartIn) begin
+ErrorOut <= 1;
+end
+end
+endcase
+end
+end
 endmodule
 ```
 
@@ -144,40 +144,40 @@ endmodule
 ###### 4) How many registers would it take to implement the FrameChecker module if the state machine uses grey encoding?
 ```
 module FrameChecker (
- input logic Clk,
- input logic Rst,
- input logic StartIn,
- input logic EndIn,
- output logic ErrorOut
+input logic Clk,
+input logic Rst,
+input logic StartIn,
+input logic EndIn,
+output logic ErrorOut
 );
- typedef enum {sReset, sIdle, iActive} StateType;
- StateType sState;
- always @(posedge Clk or posedge Rst) begin
- if (Rst) begin
- ErrorOut <= 0;
- sState <= sReset;
- end else begin
- ErrorOut <= 0;
- case (sState)
- sReset : begin
- sState <= sIdle;
- end
- sIdle : begin
- if (StartIn) begin
- sState <= iActive;
- end
- end
- iActive : begin
- if (EndIn) begin
- sState <= sIdle;
- end
- if (StartIn) begin
- ErrorOut <= 1;
- end
- end
- endcase
- end
- end
+typedef enum {sReset, sIdle, iActive} StateType;
+StateType sState;
+always @(posedge Clk or posedge Rst) begin
+if (Rst) begin
+ErrorOut <= 0;
+sState <= sReset;
+end else begin
+ErrorOut <= 0;
+case (sState)
+sReset : begin
+sState <= sIdle;
+end
+sIdle : begin
+if (StartIn) begin
+sState <= iActive;
+end
+end
+iActive : begin
+if (EndIn) begin
+sState <= sIdle;
+end
+if (StartIn) begin
+ErrorOut <= 1;
+end
+end
+endcase
+end
+end
 endmodule
 ```
 
@@ -194,40 +194,40 @@ endmodule
 ###### 5) What encoding technique is best if you want to minimize state register transitions?
 ```
 module FrameChecker (
- input logic Clk,
- input logic Rst,
- input logic StartIn,
- input logic EndIn,
- output logic ErrorOut
+input logic Clk,
+input logic Rst,
+input logic StartIn,
+input logic EndIn,
+output logic ErrorOut
 );
- typedef enum {sReset, sIdle, iActive} StateType;
- StateType sState;
- always @(posedge Clk or posedge Rst) begin
- if (Rst) begin
- ErrorOut <= 0;
- sState <= sReset;
- end else begin
- ErrorOut <= 0;
- case (sState)
- sReset : begin
- sState <= sIdle;
- end
- sIdle : begin
- if (StartIn) begin
- sState <= iActive;
- end
- end
- iActive : begin
- if (EndIn) begin
- sState <= sIdle;
- end
- if (StartIn) begin
- ErrorOut <= 1;
- end
- end
- endcase
- end
- end
+typedef enum {sReset, sIdle, iActive} StateType;
+StateType sState;
+always @(posedge Clk or posedge Rst) begin
+if (Rst) begin
+ErrorOut <= 0;
+sState <= sReset;
+end else begin
+ErrorOut <= 0;
+case (sState)
+sReset : begin
+sState <= sIdle;
+end
+sIdle : begin
+if (StartIn) begin
+sState <= iActive;
+end
+end
+iActive : begin
+if (EndIn) begin
+sState <= sIdle;
+end
+if (StartIn) begin
+ErrorOut <= 1;
+end
+end
+endcase
+end
+end
 endmodule
 ```
 
@@ -239,40 +239,40 @@ endmodule
 ###### 6) Which encoding technique produces the least amount of logic on generating the ErrorOut signal?
 ```
 module FrameChecker (
- input logic Clk,
- input logic Rst,
- input logic StartIn,
- input logic EndIn,
- output logic ErrorOut
+input logic Clk,
+input logic Rst,
+input logic StartIn,
+input logic EndIn,
+output logic ErrorOut
 );
- typedef enum {sReset, sIdle, iActive} StateType;
- StateType sState;
- always @(posedge Clk or posedge Rst) begin
- if (Rst) begin
- ErrorOut <= 0;
- sState <= sReset;
- end else begin
- ErrorOut <= 0;
- case (sState)
- sReset : begin
- sState <= sIdle;
- end
- sIdle : begin
- if (StartIn) begin
- sState <= iActive;
- end
- end
- iActive : begin
- if (EndIn) begin
- sState <= sIdle;
- end
- if (StartIn) begin
- ErrorOut <= 1;
- end
- end
- endcase
- end
- end
+typedef enum {sReset, sIdle, iActive} StateType;
+StateType sState;
+always @(posedge Clk or posedge Rst) begin
+if (Rst) begin
+ErrorOut <= 0;
+sState <= sReset;
+end else begin
+ErrorOut <= 0;
+case (sState)
+sReset : begin
+sState <= sIdle;
+end
+sIdle : begin
+if (StartIn) begin
+sState <= iActive;
+end
+end
+iActive : begin
+if (EndIn) begin
+sState <= sIdle;
+end
+if (StartIn) begin
+ErrorOut <= 1;
+end
+end
+endcase
+end
+end
 endmodule
 ```
 
