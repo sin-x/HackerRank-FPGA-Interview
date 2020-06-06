@@ -1,4 +1,5 @@
-##### 1) Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.
+### Question 1
+**Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.**
 ```
 1. Z1 <= X + 512;
 2. Z2 <= X * 8;
@@ -13,8 +14,8 @@
 - [ ] 3, 2, 1
 
 
-
-##### 2) Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.
+### Question 2
+**Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.**
 ```
 1. Z1 <= X - Y;
 2. Z2 <= X + 1;
@@ -29,7 +30,8 @@
 - [x] 3, 2, 1
 
 
-##### 3) Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.
+### Question 3
+**Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.**
 ```
 1. Z1 <= 1 when (X > Y) else 0;
 2. Z2 <= 1 when (X = 1) else 0;
@@ -44,7 +46,8 @@
 - [ ] 3, 2, 1
 
 
-##### 4) Which statement has the highest logic utilization? Assume X, Y, and Z are 32-bit unsigned integers.
+### Question 4
+**Which statement has the highest logic utilization? Assume X, Y, and Z are 32-bit unsigned integers.**
 ```
 1. Z1 <= X - Y;
 2. Z2 <= X + 1;
@@ -58,8 +61,8 @@
 - [ ] 4
 
 
-
-##### 5) Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.
+### Question 5
+**Order the following statements from lowest logic utilization to highest. Assume X, Y, and Z are 32-bit unsigned integers.**
 ```
 1. Z1 <= X % 8;
 2. Z2 <= X + 120;
