@@ -1,13 +1,14 @@
 Select the boolean equation that matches the following truth table:
-ABC O
-0 0 0 0
-0 0 1 0
-0 1 0 0
-0 1 1 1
-1 0 0 0
-1 0 1 1
-1 1 0 0
-1 1 1 0
+| A | B | C | O |
+| - | - | - | - |
+| 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 |
 
 
 (A xor B) and C
