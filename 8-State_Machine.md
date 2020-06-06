@@ -1,4 +1,4 @@
-###### 1) What type of reset does the following code use?
+##### 1) What type of reset does the following code use?
 ```
 module FrameChecker (
     input logic Clk,
@@ -44,7 +44,7 @@ endmodule
 - [x] asyncrhonous
 - [ ] synchronous
 
-###### 2) How many registers would it take to implement the FrameChecker module if the state machine uses one-hot encoding?
+##### 2) How many registers would it take to implement the FrameChecker module if the state machine uses one-hot encoding?
 ```
 module FrameChecker (
     input logic Clk,
@@ -95,7 +95,7 @@ endmodule
 
 
 
-###### 3) How many registers would it take to implement the FrameChecker module if the state machine uses binary encoding?
+##### 3) How many registers would it take to implement the FrameChecker module if the state machine uses binary encoding?
 ```
 module FrameChecker (
     input logic Clk,
@@ -147,7 +147,7 @@ endmodule
 
 
 
-###### 4) How many registers would it take to implement the FrameChecker module if the state machine uses grey encoding?
+##### 4) How many registers would it take to implement the FrameChecker module if the state machine uses grey encoding?
 ```
 module FrameChecker (
     input logic Clk,
@@ -199,7 +199,7 @@ endmodule
 
 
 
-###### 5) What encoding technique is best if you want to minimize state register transitions?
+##### 5) What encoding technique is best if you want to minimize state register transitions?
 ```
 module FrameChecker (
     input logic Clk,
@@ -246,7 +246,7 @@ endmodule
 - [x] gray
 
 
-###### 6) Which encoding technique produces the least amount of logic on generating the ErrorOut signal?
+##### 6) Which encoding technique produces the least amount of logic on generating the ErrorOut signal?
 ```
 module FrameChecker (
     input logic Clk,
@@ -292,6 +292,3 @@ endmodule
 - [ ] binary
 - [x] one-hot
 - [ ] gray
-
-
-
