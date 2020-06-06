@@ -1,5 +1,5 @@
 #### Question 1 
-Select the boolean equation that matches the following truth table:
+**Select the boolean equation that matches the following truth table:**
 
 | A | B | C | O |
 | - | - | - | - |
@@ -21,7 +21,7 @@ Select the boolean equation that matches the following truth table:
 
 
 #### Question 2
-Select the boolean equation that matches the following truth table:
+**Select the boolean equation that matches the following truth table:**
 
 | A | B | C | O |
 | - | - | - | - |
