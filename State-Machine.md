@@ -90,7 +90,7 @@ endmodule
 - [ ] 1
 - [ ] 2
 - [ ] 3
-- [ ] 4
+- [x] 4
 - [ ] 5
 
 
@@ -141,7 +141,7 @@ endmodule
 - [ ] 0
 - [ ] 1
 - [ ] 2
-- [ ] 3
+- [x] 3
 - [ ] 4
 - [ ] 5
 
@@ -193,7 +193,7 @@ endmodule
 - [ ] 0
 - [ ] 1
 - [ ] 2
-- [ ] 3
+- [x] 3
 - [ ] 4
 - [ ] 5
 
@@ -243,7 +243,7 @@ endmodule
 
 - [ ] binary
 - [ ] one-hot
-- [ ] grey
+- [x] gray
 
 
 ###### 6) Which encoding technique produces the least amount of logic on generating the ErrorOut signal?
@@ -290,8 +290,8 @@ endmodule
 
 
 - [ ] binary
-- [ ] one-hot
-- [ ] grey
+- [x] one-hot
+- [ ] gray
 
 
 
