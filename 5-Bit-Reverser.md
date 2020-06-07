@@ -108,3 +108,6 @@ endmodule
 - [ ] 1
 - [ ] 4
 - [ ] 8
+
+
+> *Explanation:* Module BitReverser in all the questions above is only a pin assignement of input to output, nothing more. There is no clock, no logic, no LUTs and no registers.
