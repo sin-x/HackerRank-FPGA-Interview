@@ -42,6 +42,7 @@ endmodule
 - [x] synchronous
 - [ ] asynchronous
 
+> *Explanation:* Signal reset [if (Rst) begin] is under the clock [always @(posedge clk) begin].
 
 ### Question 2
 **How many registers does this design use?**
@@ -83,6 +84,8 @@ module Matcher (
 
 endmodule
 ```
+
+> *Explanation:* From theory we know that a signal generates a flip-flop whenever an assignement is made at the transition of another signal; a synchronous assignement. In the code above we see that inside the clocked process, there are assignments to signals cnt (9 bits), dly (3 bits), Error (1 bit) and Found (1 bit). Hence, the answer is 14. 
 
 - [ ] 0
 - [ ] 2
@@ -143,3 +146,5 @@ endmodule
 - [ ] 256
 - [x] 511
 - [ ] 512
+
+> *Explanation:* If a signal has n bits the largest value tha can have is 2^n - 1. Signal count is 9 bits so the largest value is 2^9 - 1 = 511.
